@@ -1,0 +1,42 @@
+{
+  "name": "arvici/arvici",
+  "type": "project",
+  "description": "Arvici Framework - Start Project",
+  "keywords": ["framework", "arvici", "smart", "simple", "project"],
+  "homepage": "https://github.com/arvici/arvici",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tom Valk",
+      "email": "tomvalk@lt-box.info",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=5.6.0"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/App"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Tests\\": "tests/src"
+    }
+  },
+  "archive": {
+    "exclude": [
+      "!vendor",
+      "tests",
+      "*phpunit.xml",
+      ".travis.yml",
+      ".coveralls.yml",
+      "composer.phar"
+    ]
+  }
+}
