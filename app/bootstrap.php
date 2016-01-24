@@ -6,12 +6,14 @@
  * @copyright  2016 Tom Valk
  */
 
-/** @noinspection PhpIncludeInspection */
-require_once __DIR__ . DS . 'Config' . DS . 'App.php';
+defined('BASEPATH') || define('BASEPATH', __DIR__ . '/../');
+defined('APPPATH') || define('APPPATH', __DIR__ . '/');
+$configDir = APPPATH . 'Config/';
 
-/** @noinspection PhpIncludeInspection */
-require_once __DIR__ . DS . 'Config' . DS . 'Router.php';
-
+require_once $configDir . 'App.php';
+require_once $configDir . 'Router.php';
+require_once $configDir . 'Template.php';
+require_once $configDir . 'Database.php';
 
 // Run the router.
 \Arvici\Component\Router::getInstance()->run();
