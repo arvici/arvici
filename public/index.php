@@ -5,9 +5,7 @@
  * @package    Arvici
  * @author     Tom Valk <tomvalk@lt-box.info>
  */
-if (! defined('DS')) {
-    define('DS', DIRECTORY_SEPARATOR);
-}
+defined('DS') || define('DS', DIRECTORY_SEPARATOR);
 
 /**
  * Register auto loader
@@ -18,4 +16,4 @@ require __DIR__ . '/../vendor/autoload.php';
 /**
  * Start bootstrap of our app.
  */
-require __DIR__ . '/../app/bootstrap.php';
+require __DIR__ . '/../App/bootstrap.php';

@@ -14,6 +14,6 @@ class Welcome extends BaseController
 {
     public function index()
     {
-        $this->response->body("<h1>Welcome</h1>")->send();
+        $this->view->body('welcome')->render(['user' => 'Testing User']);
     }
 }

@@ -1,6 +1,6 @@
 <?php
-
 use Arvici\Heart\Config\Configuration as Configure;
+
 
 /**
  * Config: app
@@ -16,7 +16,7 @@ Configure::define('app', function ($config) {
          *      - production      => No errors, exceptions are shown, all logged to log files.
          *      - development     => All errors, exceptions etc are thrown and showed in pages.
          */
-        'env' => 'production',
+        'env' => 'development',
 
 
         /**
@@ -60,5 +60,11 @@ Configure::define('app', function ($config) {
         'services' => [
 
         ],
+
+
+        /**
+         * Path to the cache folder. Will be used for caching several framework components.
+         */
+        'cache' => BASEPATH . 'cache/',
     ];
 });
