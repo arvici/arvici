@@ -1,12 +1,19 @@
 <?php
-use Arvici\Heart\Config\Configuration as Configure;
 
+use Arvici\Heart\Config\Configuration as Configure;
 
 /**
  * Config: app
  */
-Configure::define('app', function ($config) {
+Configure::define('app', function () {
     return [
+
+        /**
+         * Base URL
+         * Fill in the base url, in this location the public/ should be mapped.
+         * Make sure you don't put a slash after the url!
+         */
+        'url' => 'http://localhost:8080',
 
         /**
          * Application Environment
@@ -20,11 +27,29 @@ Configure::define('app', function ($config) {
 
 
         /**
-         * Base URL
-         * Fill in the base url, in this location the public/ should be mapped.
-         * Make sure you don't put a slash after the url!
+         * Enable logging. Recommended to turn logging on!
          */
-        'url' => 'http://localhost:8080',
+        'log' => true,
+
+        /**
+         * When env = development, show visual exception in browser.
+         */
+        'visualException' => true,
+
+        /**
+         * Logs directory.
+         */
+        'logPath' => BASEPATH . 'logs/',
+
+
+        /**
+         * Define log files. Leave default to log all levels to one log file.
+         * Syntax is: key = filename, value = minimum log level. Leave null for all levels.
+         */
+        'logFile' => [
+            'error.log' =>          \Logger::ERROR,
+            'development.log' =>    \Logger::DEBUG // Delete this one to improve performance when releasing in production!
+        ],
 
 
         /**

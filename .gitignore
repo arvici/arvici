@@ -1,3 +1,10 @@
+### Application
+cache
+!cache/.gitkeep
+
+logs/*
+!logs/.gitkeep
+
 ### Composer
 composer.phar
 vendor/
@@ -8,3 +15,6 @@ cache/
 ### JetBrains Products
 .idea/
 *.iml
+
+### NetBeans
+nbproject/
