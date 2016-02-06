@@ -1,0 +1,26 @@
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteBase /
+
+    # Force removing of trailing slash
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.*)/$
+    RewriteRule ^(.+)/$ $1 [R=307,L]
+
+    # Restrict php files direct access
+    RewriteCond %{THE_REQUEST} ^.+?\ [^?]+\.php[?\ ]
+    RewriteRule \.php$ - [F]
+
+    # Assets
+    RewriteRule ^assets/(.*)?$ ../App/Template/Default/$1
+
+    # Arvici Bootup
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php [QSA,L]
+
+</IfModule>
