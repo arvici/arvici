@@ -15,6 +15,9 @@ Framework Current Development Status:
 ## About
 Arvici is a small, innovative, fast and easy to understand framework for everyone.
 
+## Documentation
+**[Click here for the documentation](https://github.com/arvici/framework#readme)**
+
 ## Status
 Arvici is currently in development. You can see the progress in the arvici/framework project.
 **It's not recommended to use Arvici in production environments yet!**
