@@ -75,16 +75,8 @@ Configure::define('app', function () {
          * Will be used for several security related tasks.
          * Should be random!
          */
-        'private_key' => 'J7a6dhaA&*dhgAfhjkHJv*78gja8gjKg89(*Sf',
+        'privateKey' => 'J7a6dhaA&*dhgAfhjkHJv*78gja8gjKg89(*Sf',
 
-
-        /**
-         * Services to load
-         * @todo: implementing service loading and interface
-         */
-        'services' => [
-
-        ],
 
         /**
          * Session Configuration, set value to false to disable session.
