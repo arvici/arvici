@@ -11,6 +11,7 @@ namespace App\Controller;
 use Arvici\Component\Controller\BasicController;
 use Arvici\Exception\ControllerNotFoundException;
 
+
 class Welcome extends BasicController
 {
     public function index()
