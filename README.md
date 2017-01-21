@@ -15,6 +15,12 @@ Framework Current Development Status:
 ## About
 Arvici is a small, innovative, fast and easy to understand framework for everyone.
 
+## Getting started
+Create your project:
+```commandline
+composer create-project arvici/arvici project-dir
+```
+
 ## Documentation
 **[Click here for the documentation](https://github.com/arvici/framework#readme)**
 
