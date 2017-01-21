@@ -16,7 +16,7 @@
   "prefer-stable": true,
   "require": {
     "php": ">=5.5.0",
-    "arvici/framework": "dev-master"
+    "arvici/framework": "1.2.0-beta.2"
   },
   "require-dev": {
   },
