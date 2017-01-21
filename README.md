@@ -25,6 +25,5 @@ composer create-project arvici/arvici project-dir
 **[Click here for the documentation](https://github.com/arvici/framework#readme)**
 
 ## Status
-Arvici is currently in development. You can see the progress in the arvici/framework project.
-**It's not recommended to use Arvici in production environments yet!**
+Arvici is currently stable and already used in production systems.
 
