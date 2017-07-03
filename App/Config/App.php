@@ -25,7 +25,6 @@ Configure::define('app', function () {
          */
         'env' => 'development',
 
-
         /**
          * Enable logging. Recommended to turn logging on!
          */
@@ -41,7 +40,6 @@ Configure::define('app', function () {
          */
         'logPath' => BASEPATH . 'logs/',
 
-
         /**
          * Define log files. Leave default to log all levels to one log file.
          * Syntax is: key = filename, value = minimum log level. Leave null for all levels.
@@ -50,7 +48,6 @@ Configure::define('app', function () {
             'error.log' =>          \Logger::ERROR,
             'development.log' =>    \Logger::DEBUG // Delete this one to improve performance when releasing in production!
         ],
-
 
         /**
          * Time Zone
@@ -61,14 +58,12 @@ Configure::define('app', function () {
          */
         'timezone' => 'Europe/Amsterdam',
 
-
         /**
          * Default locale
          * default used by the translation engine or when not using it will only be used
          * in the template html tag, and debugging.
          */
         'locale' => 'en',
-
 
         /**
          * Private Secret Key
@@ -77,6 +72,12 @@ Configure::define('app', function () {
          */
         'privateKey' => 'J7a6dhaA&*dhgAfhjkHJv*78gja8gjKg89(*Sf',
 
+        /**
+         * Extra components to load from vendor.
+         */
+        'apps' => [
+            '\App\App',
+        ],
 
         /**
          * Session Configuration, set value to false to disable session.
