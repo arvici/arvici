@@ -12,11 +12,11 @@
       "role": "Developer"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "rc",
   "prefer-stable": true,
   "require": {
-    "php": ">=5.5.0",
-    "arvici/framework": "1.2.0-beta.2"
+    "php": ">=7.0.0",
+    "arvici/framework": "2.0.0-rc.1"
   },
   "require-dev": {
   },
